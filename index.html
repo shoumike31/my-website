@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Graphic Studio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      background:#111827;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      color:#38bdf8;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(to right,#0f172a,#1e293b);
+    }
+
+    .hero h2{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin:auto;
+      font-size:18px;
+      color:#cbd5e1;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 35px;
+      background:#38bdf8;
+      color:black;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+    }
+
+    .services{
+      padding:80px 10%;
+      text-align:center;
+    }
+
+    .services h2{
+      font-size:40px;
+      margin-bottom:50px;
+      color:#38bdf8;
+    }
+
+    .service-box{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:30px;
+      border-radius:15px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    .portfolio{
+      padding:80px 10%;
+      background:#111827;
+      text-align:center;
+    }
+
+    .portfolio h2{
+      margin-bottom:40px;
+      color:#38bdf8;
+      font-size:40px;
+    }
+
+    .portfolio-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .portfolio-item{
+      background:#1e293b;
+      height:220px;
+      border-radius:15px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:22px;
+      font-weight:bold;
+    }
+
+    .contact{
+      padding:80px 10%;
+      text-align:center;
+    }
+
+    .contact h2{
+      font-size:40px;
+      color:#38bdf8;
+      margin-bottom:20px;
+    }
+
+    footer{
+      background:#111827;
+      text-align:center;
+      padding:20px;
+      color:#94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>DesignX</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Creative Graphic Design Agency</h2>
+
+      <p>
+        We create modern logos, social media designs,
+        branding, and professional graphics for your business.
+      </p>
+
+      <a href="#" class="btn">Hire Me</a>
+    </div>
+  </section>
+
+  <section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+
+      <div class="card">
+        <h3>Logo Design</h3>
+        <p>Modern and unique logo designs for brands and businesses.</p>
+      </div>
+
+      <div class="card">
+        <h3>Social Media Design</h3>
+        <p>Creative Facebook, Instagram and marketing post designs.</p>
+      </div>
+
+      <div class="card">
+        <h3>T-Shirt Design</h3>
+        <p>Professional typography and custom t-shirt artwork.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="portfolio">
+
+    <h2>Portfolio</h2>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item">Logo Project</div>
+
+      <div class="portfolio-item">Brand Identity</div>
+
+      <div class="portfolio-item">Social Media Post</div>
+
+      <div class="portfolio-item">T-Shirt Artwork</div>
+
+    </div>
+
+  </section>
+
+  <section class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: yourmail@gmail.com</p>
+
+    <p>Facebook: facebook.com/yourpage</p>
+
+  </section>
+
+  <footer>
+    © 2026 DesignX. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
